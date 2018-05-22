@@ -1,0 +1,17 @@
+
+<button class="btn" (click)="onBackClick()">BACK</button>
+<div *ngFor="let item of node">
+    <div *ngIf="item.isState; then thenBlock else elseBlock"></div>
+    <ng-template #thenBlock>
+            <state  [state]="item" (click)="onStateClick(item)">    
+            </state>
+    </ng-template>
+    <ng-template #elseBlock>
+        <category  [category]="item" (click)="onCategoryClick(item)">        
+        </category>
+    </ng-template>        
+</div>
+
+
+
+

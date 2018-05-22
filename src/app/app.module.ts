@@ -1,3 +1,4 @@
+import { DrilldownMenuModule } from './drilldown-menu/drilldown-menu.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -10,7 +11,8 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    DrilldownMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
